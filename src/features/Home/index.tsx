@@ -31,6 +31,7 @@ const Home: React.FC<Props> = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const isMounted = useIsMounted();
   const toast = useToast();
+
   useEffect(() => {
     if (isMounted) {
       const timeOut = setTimeout(() => {
@@ -53,8 +54,8 @@ const Home: React.FC<Props> = () => {
 
   if (isMounted && isLoaded) {
     return (
-      <div className={` homepage-container ${SpringDisplay.className}`}>
-        <HomeSection />
+      <div className={`homepage-container ${SpringDisplay.className}`}>
+        {/* / Set the background image}> */}
         {/* <div
           id="welcome"
           className="relative z-30"
@@ -122,22 +123,31 @@ const Home: React.FC<Props> = () => {
           </Flex>
         </Flex> */}
 
-        <div id="tokenomic">
-          <TokenomicSection />
-        </div>
+        {/* <section
+          id="welcome"
+          className="relative flex flex-col items-center justify-center text-center min-h-screen bg-cover bg-no-repeat bg-center"
+          style={{ backgroundImage: `url(/bg-2.svg)` }} // Set the background image
+        > */}
+        <HomeSection />
+        {/* <TokenomicSection /> */}
 
-        <div id="feature">
+        {/* <div id="feature">
           <FeatureFlowSection />
-        </div>
+        </div> */}
 
-        <div id="about">
+        {/* <div
+          className="flex flex-col items-center justify-center text-center min-h-screen bg-cover bg-no-repeat bg-center"
+          style={{ backgroundImage: `url(/bg-2.svg)` }} // Set the background image
+        > */}
+        <div id="about" className="mt-10">
           <CarouselSection />
         </div>
 
-        {/* <div id="roadmap" className="" />
+        <div id="roadmap" className="" />
         <div>
           <RoadMapSection />
-        </div> */}
+        </div>
+        {/* </div> */}
 
         <div id="faq" className="h-20" />
         <div>

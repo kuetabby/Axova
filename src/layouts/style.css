@@ -12,7 +12,7 @@
 
 .base-main-container {
   /* @apply w-full h-full min-h-screen bg-black mb-16 sm:mb-0 text-white; */
-  @apply w-full h-full bg-[#070322] min-h-screen mb-0 text-white;
+  @apply w-full h-full bg-black min-h-screen mb-0 text-white;
   /* background: #272363; */
   /* backdrop-filter: blur(30px); */
 
@@ -50,9 +50,8 @@
   /* @apply bg-lime-zest font-bold;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent; */;
 }
-
 
 /* Kustomisasi scrollbar dengan warna gradasi */
 ::-webkit-scrollbar {
@@ -66,7 +65,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(97.11deg, #805AE6 37.38%, #BC9AF3 115.64%);
+  background: linear-gradient(97.11deg, #054dfd 37.38%, #019ff0 115.64%);
   /* Warna gradasi thumb scrollbar */
   border-radius: 10px;
   /* Membuat thumb menjadi bulat */
@@ -75,6 +74,6 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(97.11deg, #805AE6 37.38%, #BC9AF3 115.64%);
+  background: linear-gradient(97.11deg, #054dfd 37.38%, #019ff0 115.64%);
   /* Warna gradasi thumb saat di-hover */
 }

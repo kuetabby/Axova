@@ -7,9 +7,9 @@ import BaseLayout from "@/layouts";
 
 import "./globals.css";
 
-const app_title = "Axova — Harnessing AI for Intelligent Market Moves";
-const app_name = "Axova — Harnessing AI for Intelligent Market Moves";
-const description = "Transforming Data into Profitable Moves";
+const app_title = "Axova - AI for the Decentralized Future";
+const app_name = "Axova - AI for the Decentralized Future";
+const description = "AI for the Decentralized Future";
 
 export const metadata: Metadata = {
   title: app_title,

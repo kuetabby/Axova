@@ -103,16 +103,11 @@ const Navbar: React.FC<Props> = () => {
               rel="noopener noreferrer"
             >
               <Button
-                className={`${SpringDisplayBold.className} w-[174px] text-white border-0 rounded-full shadow-md transition-transform duration-300 hover:scale-105`} // Add transition and scale for hover
+                className={`${SpringDisplayBold.className} w-[174px] text-white border-2 border-[#054dfd] bg-gradient-to-r from-[#054dfd] to-[#019ff0] rounded-lg shadow-md shadow-[#00000040] transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#019ff0] hover:border-[#019ff0] focus:outline-none focus:ring-2 focus:ring-[#019ff0] active:scale-95 active:bg-[#0260d7]`}
                 variant={"outline"}
                 size={"md"}
-                style={{
-                  boxShadow: "0px 4px 4px 0px #00000040",
-                  background:
-                    "conic-gradient(from 270deg at 50% 50%, rgba(4, 104, 251, 0.4) 0deg, rgba(0, 0, 0, 0) 172.66deg, #0468fb 281.25deg, rgba(4, 104, 251, 0.4) 360deg)",
-                }}
               >
-                Axova Bot
+                Access Terminal
               </Button>
             </Link>
           </div>

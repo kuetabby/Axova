@@ -5,10 +5,12 @@ import Image from "next/image";
 import LinesImage from "@/assets/zone-line.svg";
 import { Button } from "@chakra-ui/react";
 import { SpringDisplayBold } from "@/utils/font";
+import Link from "next/link";
+import { socialsLink } from "@/constants/links";
 
 const RoadMapSection: React.FC = () => {
   return (
-    <section className="mt-24 relative flex flex-col items-center justify-center pt-16 bg-[#050321] overflow-hidden">
+    <section className="mt-24 relative flex flex-col items-center justify-center pt-16 overflow-hidden z-[100]">
       {/* Background Lines */}
       <div className="absolute inset-0 flex justify-center items-center clip-half-circle">
         <Image
@@ -27,23 +29,23 @@ const RoadMapSection: React.FC = () => {
           <h2 className="text-4xl italic font-black text-white mb-3">
             Roadmap
           </h2>
-          <Button
-            className={`${SpringDisplayBold.className} text-white`}
-            variant={"outline"}
-            rounded="full"
-            // w={100}
-            // h={30}
-            size={"md"}
-            border={0}
-            boxShadow={"0px 4px 4px 0px #00000040"}
-            bgGradient="conic-gradient(from 270deg at 50% 50%, rgba(4, 104, 251, 0.4) 0deg, rgba(0, 0, 0, 0) 172.66deg, #0468fb 281.25deg, rgba(4, 104, 251, 0.4) 360deg)"
-            _hover={{
-              bgGradient:
-                "conic-gradient(from 270deg at 50% 50%,rgba(71, 47, 140, 0.4) 0deg, rgba(0, 0, 0, 0) 172.66deg,#493582 281.25deg,rgba(71, 47, 140, 0.4) 360deg)",
-            }}
+          <Link
+            href={socialsLink.whitepaper}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Read More
-          </Button>
+            <Button
+              className={`${SpringDisplayBold.className} text-white bg-[#054dfd] hover:bg-transparent border-2 border-transparent hover:border-[#054dfd]`}
+              variant={"outline"}
+              rounded="full"
+              // w={100}
+              // h={30}
+              size={"md"}
+              boxShadow={"0px 4px 4px 0px #00000040"}
+            >
+              Read More
+            </Button>
+          </Link>
         </div>
 
         {/* Roadmap Items */}
@@ -53,7 +55,7 @@ const RoadMapSection: React.FC = () => {
               {/* <div className='w-5 h-5 bg-[#8C85AA] rounded-full' /> */}
               <div className="flex flex-col">
                 <span className="text-white text-[8px] lg:text-xs font-bold">
-                  Phase 2: Development & Testing
+                  Phase 2: Pilot Testing & Feedback
                 </span>
               </div>
             </div>
@@ -64,7 +66,7 @@ const RoadMapSection: React.FC = () => {
               {/* <div className='w-5 h-5 bg-[#8C85AA] rounded-full' /> */}
               <div className="flex flex-col">
                 <span className="text-white text-[8px] lg:text-xs font-bold">
-                  Phase 1: Project Initialization
+                  Phase 1: Development & Customization
                 </span>
               </div>
             </div>
@@ -75,7 +77,7 @@ const RoadMapSection: React.FC = () => {
               {/* <div className='w-5 h-5 bg-[#8C85AA] rounded-full' /> */}
               <div className="flex flex-col">
                 <span className="text-white text-[8px] lg:text-xs font-bold">
-                  Phase 3: Launch & Marketing
+                  Phase 3: Full Deployment & Integration
                 </span>
               </div>
             </div>
@@ -86,7 +88,7 @@ const RoadMapSection: React.FC = () => {
               {/* <div className='w-5 h-5 bg-[#8C85AA] rounded-full' /> */}
               <div className="flex flex-col">
                 <span className="text-white text-[8px] lg:text-xs font-bold">
-                  Phase 4: Expansion & Feature Enhancements
+                  Phase 4: Scaling & Innovation
                 </span>
               </div>
             </div>

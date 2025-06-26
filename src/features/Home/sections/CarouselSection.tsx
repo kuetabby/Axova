@@ -7,22 +7,28 @@ import BgGrid from "@/assets/bg-carousel.svg";
 
 const slides = [
   {
-    title: "AI-Driven Decisions",
+    title: "AI-Driven Intelligence",
+    image: "/key-4.svg",
     description:
-      "With Axova, you can leverage AI to gain deep, real-time insights from your data, leading to smarter decisions.",
-    actionLabel: "Learn more",
+      "Leverage artificial intelligence to gain meaningful insights from your data",
   },
   {
-    title: "Decentralized & Secure",
+    title: "Decentralized Data Storage",
+    image: "/key-1.svg",
     description:
-      "By using Solana's decentralized network, Axova offers enhanced security, scalability, and privacy for your data.",
-    actionLabel: "Learn more",
+      "Axova keeps your data safe by storing it across multiple, distributed networks.",
   },
   {
-    title: "Customizable",
+    title: "Real-Time Data Access",
+    image: "/key-3.svg",
     description:
-      "Tailor the AI models and solutions to meet your specific business needs and industry challenges.",
-    actionLabel: "Learn more",
+      "Access your data immediately and gain insights that can help you act faster, whether you're in finance, healthcare, or any industry that relies on data-driven decisions.",
+  },
+  {
+    title: "Customizable and Scalable",
+    image: "/key-2.svg",
+    description:
+      "Whether you’re a small business or a large enterprise, Axova adapts to your needs.",
   },
 ];
 
@@ -44,7 +50,7 @@ const CarouselSection: React.FC = () => {
   return (
     <section className="relative flex flex-col items-center justify-start w-full overflow-hidden space-y-60">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <Image
           src={BgGrid}
           alt="Background Grid"
@@ -53,10 +59,10 @@ const CarouselSection: React.FC = () => {
           className="pointer-events-none mt-28"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#054dfd] to-transparent pointer-events-none"></div>
-      </div>
+      </div> */}
 
       {/* Section Title */}
-      <div className="relative z-10 text-center -top-24">
+      <div className="relative z-10 text-center mt-28">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl italic font-black text-white">
           Why Axova?
         </h2>
@@ -80,7 +86,7 @@ const CarouselSection: React.FC = () => {
       </div>
 
       {/* Carousel Content */}
-      <div className="relative z-10 w-full flex justify-center items-center space-x-6 -top-24">
+      <div className="relative z-10 w-full flex justify-center items-center space-x-6">
         {/* Arrow Left */}
         <button
           onClick={handlePrev}
@@ -108,19 +114,25 @@ const CarouselSection: React.FC = () => {
                   }deg) translateX(${position * 360}px)`,
                 }}
               >
-                <div className="w-[320px] h-[320px] bg-gradient-to-br from-[#352F50] to-[#393059] p-8 rounded-lg shadow-lg flex flex-col justify-start border border-[#7A7399]">
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      {slide.title}
-                    </h3>
-                    <p className="text-sm text-gray-300 mb-4">
-                      {slide.description}
-                    </p>
-                  </div>
-                  <button className="flex flex-row w-[150px] py-2 px-4 items-center gap-2 border rounded-full text-sm text-white">
+                <div className="w-[320px] h-[320px] bg-transparent p-8 rounded-lg shadow-lg flex flex-col justify-start border-2 border-[#054dfd]">
+                  <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    width={100}
+                    height={100}
+                    className="mx-auto"
+                  />
+
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {slide.title}
+                  </h3>
+                  <p className="text-sm text-gray-300 mb-4">
+                    {slide.description}
+                  </p>
+                  {/* <button className="flex flex-row w-[150px] py-2 px-4 items-center gap-2 border rounded-full text-sm text-white">
                     {slide.actionLabel}
                     <FaLongArrowAltRight size={24} />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             );

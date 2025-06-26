@@ -26,11 +26,11 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
 
   const tabsList = useMemo(() => {
     return [
-      {
-        href: "/",
-        pathname: `/`,
-        name: "Home",
-      },
+      // {
+      //   href: "/",
+      //   pathname: `/`,
+      //   name: "Home",
+      // },
       {
         href: "#about",
         pathname: `#about`,
@@ -41,15 +41,20 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
       //   pathname: `#tokenomics`,
       //   name: "Tokenomics",
       // },
-      // {
-      //   href: "#roadmap",
-      //   pathname: `#roadmap`,
-      //   name: "Roadmap",
-      // },
+      {
+        href: "#roadmap",
+        pathname: `#roadmap`,
+        name: "Roadmap",
+      },
       {
         href: "#faq",
         pathname: `#faq`,
         name: "FAQ",
+      },
+      {
+        href: "/",
+        pathname: `/`,
+        name: "Docs",
       },
     ];
   }, []);
@@ -62,7 +67,7 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
     <div
       className={clsx(
         // "w-64 lg:w-[42.5%] xl:w-2/5 justify-between items-center",
-        "w-1/2 xl:w-2/5 justify-center gap-10 xl:gap-16 items-center conic-gradient-background lg:rounded-full lg:bg-transparent p-3 ",
+        "w-1/2 xl:w-2/5 justify-center gap-10 xl:gap-16 items-center lg:rounded-full lg:bg-transparent p-3 border-2 border-[#019ff0]",
         containterClass
       )}
     >

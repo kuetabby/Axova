@@ -8,9 +8,10 @@ import LogoTelegramDex from "@/assets//Logo_AxovaPNG.png";
 import { SpringDisplayBold } from "@/utils/font";
 import Link from "next/link";
 import { findUsLink, socialsLink } from "@/constants/links";
-import IconTwitter from "@/assets/twitter_x.png";
-import IconGitbook from "@/assets/gitbook-powerlink.png";
-import IconTelegram from "@/assets/icon_telegram.png";
+
+import { FaXTwitter } from "react-icons/fa6";
+import { DexscreenerIcon } from "@/utils/Icon/dex";
+import { GitbookIcon } from "@/utils/Icon/socials";
 
 interface Props {}
 
@@ -21,7 +22,8 @@ const AppFooter: React.FC<Props> = () => {
 
   return (
     <footer
-      className={`${SpringDisplayBold.className} relative w-full text-white mt-16`}
+      className={`${SpringDisplayBold.className} relative bg-black w-full text-white mt-16 bg-cover bg-no-repeat bg-center`}
+      style={{ backgroundImage: `url(/bg-4.svg)` }}
       // style={{
       //   backgroundImage: `url(${BgFooter.src})`,
       //   backgroundSize: "cover",
@@ -34,14 +36,14 @@ const AppFooter: React.FC<Props> = () => {
         {/* Left Section */}
         <div className="flex flex-col w-full sm:w-1/3 items-center sm:items-start text-center sm:text-start md:text-left mb-8 md:mb-0">
           <img src={LogoTelegramDex.src} width={200} height={40} />
-          <p className="text-sm text-gray-400 mt-4">
+          <p className="text-white mt-4">
             Transforming Data into Profitable Moves
           </p>
         </div>
 
         {/* Center Section */}
         <div className="md:w-full w-1/3 flex flex-col lg:flex-row self-center justify-between text-right mb-8 md:mb-20 lg:mb-40 gap-12">
-          <div className="w-full flex flex-row justify-center md:justify-end gap-12 text-center md:text-left md:mb-0">
+          {/* <div className="w-full flex flex-row justify-center md:justify-end gap-12 text-center md:text-left md:mb-0">
             <div className="mb-6 md:mb-0">
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -62,6 +64,7 @@ const AppFooter: React.FC<Props> = () => {
                 </Link>
               </ul>
             </div>
+            
             <div>
               <h3 className="font-semibold mb-4">Find Us</h3>
               <ul className="space-y-2 text-sm text-gray-400">
@@ -111,48 +114,39 @@ const AppFooter: React.FC<Props> = () => {
                 </Link>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           {/* Right Section */}
           <div className="flex flex-col w-full text-center md:text-right items-center sm:items-end">
-            <h3 className="font-semibold mb-4">Join the Axova Community</h3>
+            {/* <h3 className="font-semibold mb-4">Join the Axova Community</h3> */}
             <div className="flex justify-center md:justify-end space-x-4">
               <Link
                 href={socialsLink.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
+                className="text-white hover:text-primaryColor transition-colors"
+                aria-label="x"
               >
-                <Image
-                  src={IconTwitter}
-                  width={30}
-                  alt="x-twitter"
-                  className="footer-socials-button"
-                />
-              </Link>
-
-              <Link
-                href={socialsLink.telegram}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={IconTelegram}
-                  width={30}
-                  alt="telegram"
-                  className="footer-socials-button"
-                />
+                <FaXTwitter size={24} />
               </Link>
 
               <Link
                 href={socialsLink.whitepaper}
-                target="_blank"
-                rel="noopener noreferrer"
+                className="text-white hover:text-primaryColor transition-colors pointer"
+                aria-label="documenation"
               >
-                <Image
-                  src={IconGitbook}
-                  width={30}
-                  alt="gitbook"
-                  className="footer-socials-button"
+                <GitbookIcon
+                  className="fill-white"
+                  style={{ fontSize: "1.5em" }}
+                />
+              </Link>
+
+              <Link
+                href={findUsLink.dexscreener}
+                className="text-white hover:text-primaryColor transition-colors pointer"
+                aria-label="documenation"
+              >
+                <DexscreenerIcon
+                  className="fill-white"
+                  style={{ fontSize: "1.5em" }}
                 />
               </Link>
             </div>

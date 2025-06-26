@@ -24,7 +24,7 @@ body {
 
 body {
   color: white;
-  @apply bg-[#050321];
+  /* @apply bg-[#050321]; */
   /* background: black; */
 }
 
@@ -35,7 +35,6 @@ body {
 }
 
 @keyframes twinkle {
-
   0%,
   100% {
     opacity: 0.25;
@@ -59,7 +58,7 @@ body {
 }
 
 .gradient-border::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
