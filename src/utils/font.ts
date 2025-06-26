@@ -15,3 +15,11 @@ export const SpringDisplayBold = localFont({
 
   preload: true,
 });
+
+export const plasma = localFont({
+  src: "./fonts/Plasma.otf",
+  weight: "400",
+  display: "swap",
+
+  preload: true,
+});

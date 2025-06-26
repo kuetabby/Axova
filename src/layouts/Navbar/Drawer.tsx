@@ -10,7 +10,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { getHash } from "@/utils/hash";
 import useHash from "@/hooks/useHashname";
 
-import { SpringDisplay } from "@/utils/font";
+import { plasma } from "@/utils/font";
 
 // import AppTitle from "@/assets/title-app.png";
 // import { findUsLink, socialsLink } from "@/constants/links";
@@ -69,7 +69,7 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
 
   return (
     <Collapse in={isOpen} animateOpacity>
-      <div className={`w-full h-full mt-8 ${SpringDisplay.className}`}>
+      <div className={`w-full h-full mt-8 ${plasma.className}`}>
         <List spacing={3}>
           {tabsList.map((item) => {
             const isActive = !!defaultHash

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import LinesImage from "@/assets/zone-line.svg";
 import { Button } from "@chakra-ui/react";
-import { SpringDisplayBold } from "@/utils/font";
+import { plasma } from "@/utils/font";
 import Link from "next/link";
 import { socialsLink } from "@/constants/links";
 
@@ -35,7 +35,7 @@ const RoadMapSection: React.FC = () => {
             rel="noopener noreferrer"
           >
             <Button
-              className={`${SpringDisplayBold.className} text-white bg-[#054dfd] hover:bg-transparent border-2 border-transparent hover:border-[#054dfd]`}
+              className={`${plasma.className} text-white bg-[#054dfd] hover:bg-transparent border-2 border-transparent hover:border-[#054dfd]`}
               variant={"outline"}
               rounded="full"
               // w={100}

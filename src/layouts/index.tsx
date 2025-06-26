@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 import Provider from "@/library/Provider";
 
-import { SpringDisplay } from "@/utils/font";
+import { plasma } from "@/utils/font";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
 
@@ -32,7 +32,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
   return (
     <Provider>
       {isMounted && isLoaded && <Navbar />}
-      <main className={clsx("base-main-container", SpringDisplay.className)}>
+      <main className={clsx("base-main-container", plasma.className)}>
         {children}
       </main>
       {isMounted && isLoaded && <Footer />}

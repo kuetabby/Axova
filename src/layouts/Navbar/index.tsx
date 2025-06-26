@@ -11,7 +11,7 @@ import { NavbarDrawer } from "./Drawer";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
 
-import { SpringDisplayBold } from "@/utils/font";
+import { plasma } from "@/utils/font";
 import { socialsLink } from "@/constants/links";
 
 // import denodeLogo from "@/assets/logo-denode.svg";
@@ -73,7 +73,7 @@ const Navbar: React.FC<Props> = () => {
     <div
       className={clsx(
         isScroll || isOpenDrawer ? "navbar-fixed" : "navbar-container",
-        SpringDisplayBold.className,
+        plasma.className,
         "lg:bg-transparent lg:mx-auto"
       )}
     >
@@ -103,7 +103,7 @@ const Navbar: React.FC<Props> = () => {
               rel="noopener noreferrer"
             >
               <Button
-                className={`${SpringDisplayBold.className} w-[174px] text-white border-2 border-[#054dfd] bg-gradient-to-r from-[#054dfd] to-[#019ff0] rounded-lg shadow-md shadow-[#00000040] transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#019ff0] hover:border-[#019ff0] focus:outline-none focus:ring-2 focus:ring-[#019ff0] active:scale-95 active:bg-[#0260d7]`}
+                className={`${plasma.className} w-[174px] text-white border-2 border-[#054dfd] bg-gradient-to-r from-[#054dfd] to-[#019ff0] rounded-lg shadow-md shadow-[#00000040] transition-all duration-300 ease-in-out hover:bg-transparent hover:text-[#019ff0] hover:border-[#019ff0] focus:outline-none focus:ring-2 focus:ring-[#019ff0] active:scale-95 active:bg-[#0260d7]`}
                 variant={"outline"}
                 size={"md"}
               >
@@ -119,7 +119,7 @@ const Navbar: React.FC<Props> = () => {
               rel="noopener noreferrer"
             >
               <Button
-                className={`${SpringDisplayBold.className} sm:hidden  text-white`}
+                className={`${plasma.className} sm:hidden  text-white`}
                 variant={"outline"}
                 rounded="full"
                 size={"md"}

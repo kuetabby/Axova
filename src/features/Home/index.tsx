@@ -6,7 +6,7 @@ import YinLoader from "@/components/Loader/Custom";
 import { useIsMounted } from "@/hooks/useIsMounted";
 
 import { contractAddress, socialsLink } from "@/constants/links";
-import { SpringDisplay } from "@/utils/font";
+import { plasma } from "@/utils/font";
 import iconHome from "@/assets/icon-home.png";
 import { motion } from "framer-motion";
 
@@ -54,7 +54,7 @@ const Home: React.FC<Props> = () => {
 
   if (isMounted && isLoaded) {
     return (
-      <div className={`homepage-container ${SpringDisplay.className}`}>
+      <div className={`homepage-container ${plasma.className}`}>
         {/* / Set the background image}> */}
         {/* <div
           id="welcome"
@@ -101,7 +101,7 @@ const Home: React.FC<Props> = () => {
               <Box
                 className={clsx(
                   'w-[320px] lg:w-[850px] text-4xl lg:text-8xl font-bold uppercase leading-tight',
-                  SpringDisplay.className
+                  plasma.className
                 )}
               >
                 <Text
