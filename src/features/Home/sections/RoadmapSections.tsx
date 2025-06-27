@@ -25,7 +25,7 @@ const RoadMapSection: React.FC = () => {
 
       {/* Roadmap Content */}
       <div className="relative z-10 text-center h-[300px] sm:h-[500px]">
-        <div className="absolute top-[28%] -left-20 text-center">
+        <div className="absolute top-[40%] -left-20 text-center">
           <h2 className="text-4xl italic font-black text-white mb-3">
             Roadmap
           </h2>
@@ -95,6 +95,9 @@ const RoadMapSection: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Black Gradient at the Bottom */}
+      <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-black to-transparent z-50"></div>
     </section>
   );
 };

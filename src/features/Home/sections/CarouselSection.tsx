@@ -76,12 +76,11 @@ const CarouselSection: React.FC = () => {
           <source src="Axova.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-        <p className="text-[15px] sm:text-sm lg:text-md text-gray-400 mt-3 lg:mt-10 sm:mx-[100px] lg:mx-[300px]">
-          In today's rapidly evolving business landscape, making informed
-          decisions is more crucial than ever. Axova empowers organizations by
-          harnessing the power of artificial intelligence to transform their
-          data into actionable insights. With our state-of-the-art platform,
-          businesses can unlock the potential of their data like never before.
+        <p className="text-[15px] sm:text-sm lg:text-md text-gray-400 mt-3 lg:mt-10 w-[450px] md:w-[550px] xl:w-[850px] mx-auto">
+          Axova empowers organizations by harnessing the power of artificial
+          intelligence to transform their data into actionable insights. With
+          our state-of-the-art platform, businesses can unlock the potential of
+          their data like never before.
         </p>
       </div>
 

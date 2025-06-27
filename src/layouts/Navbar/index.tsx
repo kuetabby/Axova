@@ -74,7 +74,7 @@ const Navbar: React.FC<Props> = () => {
       className={clsx(
         isScroll || isOpenDrawer ? "navbar-fixed" : "navbar-container",
         plasma.className,
-        "lg:bg-transparent lg:mx-auto"
+        "bg-transparent lg:mx-auto"
       )}
     >
       <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}>

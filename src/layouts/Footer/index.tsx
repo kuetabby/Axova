@@ -33,7 +33,7 @@ const AppFooter: React.FC<Props> = () => {
         <div className="flex flex-col w-full sm:w-1/3 items-center sm:items-start text-center sm:text-start md:text-left mb-8 md:mb-0">
           <img src={LogoTelegramDex.src} width={200} height={40} />
           <p className="text-white mt-4">
-            Transforming Data into Profitable Moves
+            Shaping the future of decentralized AI
           </p>
         </div>
 
@@ -74,6 +74,14 @@ const AppFooter: React.FC<Props> = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center items-center pb-4 text-[#F9FAFB]">
+        <p className="font-thin text-white text-center lg:text-left">
+          &copy; 2025 Axova.
+        </p>
+        <p className="font-thin text-white text-center lg:text-left">
+          All rights reserved
+        </p>
       </div>
     </footer>
   );
