@@ -45,7 +45,7 @@ const HomeSection: React.FC = () => {
             rel="noopener noreferrer"
           >
             <button className="px-8 py-3 bg-[#054dfd] text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-[#054dfd]Light/20">
-              Buy AVA
+              Buy AXO
             </button>
           </Link>
 
