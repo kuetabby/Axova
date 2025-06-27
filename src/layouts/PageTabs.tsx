@@ -52,8 +52,8 @@ const PageTabs: React.FC<Props> = ({ containterClass }) => {
         name: "FAQ",
       },
       {
-        href: "/",
-        pathname: `/`,
+        href: "https://documentation.axovahub.com",
+        pathname: `https://documentation.axovahub.com`,
         name: "Docs",
       },
     ];
