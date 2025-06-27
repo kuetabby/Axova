@@ -2,7 +2,7 @@ export const contractAddress = "-";
 export const pairAddress = "-";
 
 export const socialsLink = {
-  whitepaper: "/",
+  whitepaper: "https://documentation.axovahub.com",
   twitter: "https://x.com/AxovaHub",
   telegram: "https://t.me/",
   medium: "https://medium.com",
