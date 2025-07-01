@@ -22,9 +22,17 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     apple: [
-      { url: "/app-apple-icon.png" },
-      { url: "/app-apple-icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/app-apple-icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/apple-touch-icon.png" },
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
   },
   twitter: {
